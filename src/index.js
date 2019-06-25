@@ -8,7 +8,7 @@ import 'react-mdl/extra/material.js';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-	<Router basename="/todos/">
+	<Router basename="/todos">
 		<App />
 	</Router>
 	,
