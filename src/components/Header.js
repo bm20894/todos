@@ -6,9 +6,19 @@ function Header() {
 		<header>
 			<h1>TodoList</h1>
 			<div className="head-text">
-				<Link className="head-link" to="/">Home</Link>
+				<Link
+					className="head-link"
+					to="/"
+				>
+					Home
+				</Link>
 				<span>|</span>
-				<Link className="head-link" to="/about">About</Link>
+				<Link
+					className="head-link"
+					to="/about"
+				>
+					About
+				</Link>
 			</div>
 				<br />
 				{" "}
