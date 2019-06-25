@@ -18,7 +18,7 @@ class AddTodo extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.onSubmit} className="mt-3" style={{display: "flex"}}>
+			<form onSubmit={this.onSubmit} className="m-3" style={{display: "flex"}}>
 				<input
 					type="text"
 					placeholder="Add Todo Item"
