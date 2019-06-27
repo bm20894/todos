@@ -11,11 +11,11 @@ export default () => {
 	const [todos, setTodos] = useState([]);
 
 	// Toggle `this.complete` for TodoItem
-	const toggleComplete = (id) => {
+	const toggleComplete = ({ id, checked }) => {
 		const todoRef = firebase.database().ref(`todos/${id}`);
 		todoRef.once("value", snapshot => {
 			let item = snapshot.val();
-			item.completed = !item.completed;
+			item.completed = checked;
 			todoRef.set(item);
 		});
 	}

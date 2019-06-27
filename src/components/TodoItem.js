@@ -12,11 +12,16 @@ export default ({ todo, toggleComplete, delTodo }) => {
 		}
 	}
 
-	const { title, id } = todo;
+	const { title, completed, id } = todo;
 	return (
 		<div className="card" style={getStyle()}>
 			<div className="card-body">
-				<input type="checkbox" onChange={() => toggleComplete(id)} />
+				{ completed ?
+					<input type="checkbox" checked onChange={(e) => toggleComplete({id, checked: e.target.checked})}/>
+						:
+					<input type="checkbox" onChange={(e) => toggleComplete({id, checked: e.target.checked})}/>
+				}
+
 					{title}
 					<button
 						className="btn btn-danger"
