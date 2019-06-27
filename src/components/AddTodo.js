@@ -1,41 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class AddTodo extends Component {
-	state = {
-		title: ""
-	}
+export default ({ addTodo }) => {
+	const [title, setTitle] = useState("");
 
-	onSubmit = (e) => {
+	const onSubmit = (e) => {
 		e.preventDefault();
-		const { title } = this.state;
 		if(title.length > 0) {
-			this.props.addTodo(title);
-			this.setState({title: ""});
+			addTodo(title);
+			setTitle("");
 		}
 	}
 
-	onChange = (e) => this.setState({[e.target.name]: e.target.value})
+	const onChange = (e) => setTitle(e.target.value)
 
-	render() {
-		return (
-			<form onSubmit={this.onSubmit} className="m-3" style={{display: "flex"}}>
-				<input
-					type="text"
-					placeholder="Add Todo Item"
-					name="title"
-					style={{flex: "8", padding: "5px"}}
-					value={this.state.title}
-					onChange={this.onChange}
-				/>
-				<input
-					type="submit"
-					value="Submit"
-					className="btn btn-success ml-3"
-					style={{flex: "1"}}
-				/>
-			</form>
-		);
-	}
+	return (
+		<form onSubmit={onSubmit} className="m-3" style={{display: "flex"}}>
+			<input
+				type="text"
+				placeholder="Add Todo Item"
+				name="title"
+				style={{flex: "8", padding: "5px"}}
+				value={title}
+				onChange={onChange}
+			/>
+			<input
+				type="submit"
+				value="Submit"
+				className="btn btn-success ml-3"
+				style={{flex: "1"}}
+			/>
+		</form>
+	);
 }
-
-export default AddTodo
