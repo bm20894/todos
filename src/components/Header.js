@@ -9,9 +9,11 @@ export default () => {
 				<Link className="head-link" to="/">Home</Link>
 				<span>|</span>
 				<Link className="head-link" to="/about">About</Link>
+				<span>|</span>
+				<Link className="head-link" to="/markdown">Markdown</Link>
 			</div>
-				<br />
-				{" "}
+			<br />
+			{" "}
 		</header>
 	);
 }

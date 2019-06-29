@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { TodoContext } from '../TodoContext';
 
-export default ({ addTodo }) => {
+export default () => {
 	const [title, setTitle] = useState("");
+	const dispatch = useContext(TodoContext);
 
 	const onSubmit = (e) => {
 		e.preventDefault();
 		if(title.length > 0) {
-			addTodo(title);
+			dispatch({ type: "add", title });
 			setTitle("");
 		}
 	}

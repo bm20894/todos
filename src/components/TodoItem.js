@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TodoContext } from '../TodoContext';
 
-export default ({ todo, toggleComplete, delTodo }) => {
+export default ({ todo }) => {
+	const dispatch = useContext(TodoContext);
 
 	const getStyle = () => {
 		const { completed } = todo;
@@ -16,19 +18,18 @@ export default ({ todo, toggleComplete, delTodo }) => {
 	return (
 		<div className="card" style={getStyle()}>
 			<div className="card-body">
-				{ completed ?
-					<input type="checkbox" checked onChange={(e) => toggleComplete({id, checked: e.target.checked})}/>
-						:
-					<input type="checkbox" onChange={(e) => toggleComplete({id, checked: e.target.checked})}/>
-				}
-
-					{title}
-					<button
-						className="btn btn-danger"
-						onClick={() => delTodo(id)}
-						style={{ padding: "5px 10px", float: "right" }}>
-						X
-					</button>
+				<input
+					type="checkbox"
+					checked={completed}
+					onChange={(e) => dispatch({ type: "toggle-complete", id, checked: e.target.checked })}
+				/>
+				{title}
+				<button
+					className="btn btn-danger"
+					onClick={() => dispatch({ type: "delete", id })}
+					style={{ padding: "5px 10px", float: "right" }}>
+					X
+				</button>
 			</div>
 		</div>
 	)

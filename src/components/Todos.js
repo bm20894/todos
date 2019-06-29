@@ -9,7 +9,7 @@ const Spinner = () => (
 	</div>
 )
 
-export default ({ toggleComplete, delTodo }) => {
+export default () => {
 	const [todos, setState] = useState([]);
 
 	useEffect(() => {
@@ -22,6 +22,7 @@ export default ({ toggleComplete, delTodo }) => {
 				newTodos.push({ id: todo, title, completed });
 			}
 			setState(newTodos);
+			// update from context
 		});
 	}, []);
 
@@ -31,8 +32,6 @@ export default ({ toggleComplete, delTodo }) => {
 				<TodoItem
 					key={todo.id}
 					todo={todo}
-					toggleComplete={toggleComplete}
-					delTodo={delTodo}
 				/>
 			)) : <Spinner />}
 		</React.Fragment>
