@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  todos-prod:
+    container_name: todos-prod
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    ports:
+      - "80:80"

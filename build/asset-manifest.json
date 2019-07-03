@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/todos/static/css/main.ace0d4f4.chunk.css",
-    "main.js": "/todos/static/js/main.65ad14b1.chunk.js",
-    "main.js.map": "/todos/static/js/main.65ad14b1.chunk.js.map",
-    "runtime~main.js": "/todos/static/js/runtime~main.2b8fbda7.js",
-    "runtime~main.js.map": "/todos/static/js/runtime~main.2b8fbda7.js.map",
-    "static/css/2.04aae6c4.chunk.css": "/todos/static/css/2.04aae6c4.chunk.css",
-    "static/js/2.b1eacdd2.chunk.js": "/todos/static/js/2.b1eacdd2.chunk.js",
-    "static/js/2.b1eacdd2.chunk.js.map": "/todos/static/js/2.b1eacdd2.chunk.js.map",
-    "index.html": "/todos/index.html",
-    "precache-manifest.d2742f10bae2076dd7f65184a5019177.js": "/todos/precache-manifest.d2742f10bae2076dd7f65184a5019177.js",
-    "service-worker.js": "/todos/service-worker.js",
-    "static/css/2.04aae6c4.chunk.css.map": "/todos/static/css/2.04aae6c4.chunk.css.map",
-    "static/css/main.ace0d4f4.chunk.css.map": "/todos/static/css/main.ace0d4f4.chunk.css.map",
-    "static/media/App.css": "/todos/static/media/img.b154f72a.png",
-    "static/media/spinner.gif": "/todos/static/media/spinner.5e02af51.gif"
+    "main.css": "/static/css/main.7fd673eb.chunk.css",
+    "main.js": "/static/js/main.ad020cbf.chunk.js",
+    "main.js.map": "/static/js/main.ad020cbf.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.04aae6c4.chunk.css": "/static/css/2.04aae6c4.chunk.css",
+    "static/js/2.10ec288f.chunk.js": "/static/js/2.10ec288f.chunk.js",
+    "static/js/2.10ec288f.chunk.js.map": "/static/js/2.10ec288f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.499c579d371845b1e5033b6c08e6286c.js": "/precache-manifest.499c579d371845b1e5033b6c08e6286c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.04aae6c4.chunk.css.map": "/static/css/2.04aae6c4.chunk.css.map",
+    "static/css/main.7fd673eb.chunk.css.map": "/static/css/main.7fd673eb.chunk.css.map",
+    "static/media/App.css": "/static/media/img.b154f72a.png",
+    "static/media/spinner.gif": "/static/media/spinner.5e02af51.gif"
   }
 }

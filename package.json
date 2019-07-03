@@ -2,6 +2,7 @@
   "name": "todos",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "env-cmd": "^9.0.3",
     "firebase": "^6.2.3",
@@ -21,7 +22,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://bm20894.github.io/todos",
   "eslintConfig": {
     "extends": "react-app"
   },
